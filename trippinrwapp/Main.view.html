@@ -1,0 +1,22 @@
+
+<template data-controller-name="trippinrwapp.Main">
+    <div data-sap-ui-type="sap.m.Page" data-title="Trippin">
+        <!--<div data-sap-ui-aggregation="content">
+            <div data-sap-ui-type="sap.m.List" data-headerText="Photos" data-items="{/value}">
+                <div data-sap-ui-type="sap.m.StandardListItem" data-type="Active" data-title="{Name}"></div>
+            </div>
+        </div>-->
+        <div data-sap-ui-aggregation="content">
+            <div data-sap-ui-type="sap.ui.layout.Grid">
+                <ul>
+                    unmesh
+                    {{each path="/value"}}
+                    <li>
+                        {{Name}}
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+
+        </div>
+</template>
